@@ -151,9 +151,9 @@ class UserCreationFormTest(TestDataMixin, TestCase):
     ])
     def test_validates_password(self):
         data = {
-            'username': 'anothertestclient',
-            'password1': 'anothertestclient',
-            'password2': 'anothertestclient',
+            'username': 'testclient2',
+            'password1': 'testclient2',
+            'password2': 'testclient2',
         }
         form = UserCreationForm(data)
         self.assertFalse(form.is_valid())
